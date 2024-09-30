@@ -8,19 +8,19 @@ services:
       replicas: 2
   train:
     image: chetankose/googletrain:latest
-    porst:
+    ports:
       - "82:80"
     deploy:
       replicas: 2
   dth:
     image: chetankose/googledth:latest
-    porst:
+    ports:
       - "83:80"
     deploy:
       replicas: 2
   money:
     image: chetankose/googletrain:latest
-    porst:
+    ports:
       - "84:80"
     deploy:
       replicas: 2
