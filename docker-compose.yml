@@ -19,7 +19,7 @@ services:
     deploy:
       replicas: 2
   money:
-    image: chetankose/googletrain:latest
+    image: chetankose/googlemoney:latest
     ports:
       - "84:80"
     deploy:
