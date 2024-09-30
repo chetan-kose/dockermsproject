@@ -1,26 +1,26 @@
 version: "3.8"
 services:
   movies:
-    image: chetankose/paymovies:latest
+    image: chetankose/googlemovies:latest
     ports:
-      - 81:80
+      - "81:80"
     deploy:
-      replicas: 3
+      replicas: 2
   train:
-    image: chetankose/paytrain:latest
-    ports:
-      - 82:80
+    image: chetankose/googletrain:latest
+    porst:
+      - "82:80"
     deploy:
-      replicas: 3
+      replicas: 2
   dth:
-    image: chetankose/paydth:latest
-    ports:
-      - 83:80
+    image: chetankose/googledth:latest
+    porst:
+      - "83:80"
     deploy:
-      replicas: 3
-  recharge:
-    image: chetankose/payrecharge:latest
-    ports:
-      - 84:80
+      replicas: 2
+  money:
+    image: chetankose/googletrain:latest
+    porst:
+      - "84:80"
     deploy:
-      replicas: 3
+      replicas: 2
